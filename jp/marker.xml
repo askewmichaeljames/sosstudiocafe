@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<markers> 
+  <!-- Dont use copy and paste on this XML file, use "View Source" or "Save As"
+       What the browser displays is *interpreted* XML, not XML source. -->
+ <marker lat="34.665009" lng="134.959185" html='Space of Sound&lt;br&gt;英会話教室 and Cafe'  label="Space of Sound" /> 
+ <marker lat="34.629644" lng="135.043112" html='市営五色山南住宅&lt;br&gt;英会話カフェ'  label="Goshikiyama Minami Jutaku" /> 
+ <marker lat="34.631542" lng="135.043578" html='五色山 カルチャーセンター&lt;br&gt;英語レッスン'  label="Goshikiyama Cultural Center" />
+ <marker lat="34.653147" lng="135.026715" html='明舞 カルチャーセンター&lt;br&gt;英語レッスン'  label="Meimai Cultural Center" />
+ <marker lat="34.660261" lng="134.990789" html='玉津 コミュニティーセンター&lt;br&gt;英語レッスン'  label="Tamatsu Community Center" />
+</markers>
