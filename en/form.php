@@ -11,6 +11,6 @@
 
     mail($to, $subject, $msg, $headers);
 	
-	mail($email,"Confirmation","Thank you for contacting SOS Studio Cafe, " . $_POST['name'] . ". We will respond to your inquiry as soon as possible.","From: donotreply@sosstudiocafe.com");
+	mail($email,"Confirmation","Thank you for contacting SOS Studio Cafe, " . $_POST['name'] . ". We will respond to your inquiry as soon as possible.","From: noreply@sosstudiocafe.com");
 
 ?>

@@ -15,6 +15,7 @@ body {
 </style>
 <link href="../sos.css" rel="stylesheet" type="text/css" />
 <link rel="icon" type="image/png" href="../images/favicon.png">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -35,78 +36,99 @@ body {
 <div id="xcontainer">
 <div id="xinner">
 <div align="center">
-  <table width="700" border="0" cellspacing="0" cellpadding="0">
-    
-    <tr>
-      <td height="100" bordercolor="#000000"><img src="../images/header.png" alt="sos" width="700" height="100" usemap="#Map" border="0" />
-        <map name="Map" id="Map">
-          <area shape="rect" coords="6,5,697,94" href="index.html" alt="sos" />
-        </map></td>
-    </tr>
-  </table>
-  <table border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="700" height="20"><img src="../images/buttons_en.png" alt="buttons" width="700" height="20" usemap="#buttons" border="0" />
-        <map name="buttons" id="buttons">
-          <area shape="rect" coords="17,1,146,19" href="cafe.html" alt="cafe" />
-          <area shape="rect" coords="153,1,247,19" href="class.html" alt="class" />
-          <area shape="rect" coords="253,1,347,19" href="studio.html" alt="studio" />
-          <area shape="rect" coords="354,0,447,19" href="photos.html" alt="photos" />
-          <area shape="rect" coords="452,1,547,19" href="map.html" alt="map" />
-          <area shape="rect" coords="553,1,681,19" href="contact.html" alt="contact" />
-        </map></td>
-    </tr>
-  </table>
-  <table width="700" border="0" cellpadding="10" cellspacing="0" id="body">
-    <tr>
-      <td width="100" valign="top"><p><img src="../images/flags.jpg" width="100" height="387" />
-        </p>
-        <p><img src="../images/language.png" alt="language" width="100" height="50" usemap="#language" border="0" />
-          <map name="language" id="language">
-            <area shape="rect" coords="3,1,98,24" href="contact.html" alt="English" />
-            <area shape="rect" coords="3,25,98,49"" href="../jp/contact.html" alt="japanese" />
-          </map>
-        </p></td>
-      <td height="500" valign="top" align="left" class="text">
-      	<p><span class="bold_text">E-Mail:</span> <a href="mailto:eikaiwa_cafe@hotmail.com">eikaiwa_cafe@hotmail.com</a><br>
-           <span class="bold_text">Phone:</span> 090 8484 2709<br>
-           <span class="bold_text">Address:</span> 301 Green Ace Building, 2-12-13 Minamicho, Nishi-akashi, Akashi-shi, 673-0041<p>
-      	<form id="form1" name="form1" method="post" action="form.php">
-      	  <label>Name:
-          	<br>
-      	    <input type="text" name="name" id="name" size="50" />
-      	    </label>
-    	  <p>
-    	    <label>E-Mail Address:
-            <br>
-    	    <input type="text" name="email" id="email" size="50" />
-    	    </label>
-    	  </p>
-    	  <p>
-    	    <label>Message:
-            <br>
-    	    <textarea name="message" id="message" cols="60" rows="9"></textarea>
-    	    </label>
-    	  </p>
-          <p>
-          	<input type="submit" name="button" id="button" value="Submit" />
-          </p>
-      	</form>
-      	<p>&nbsp;</p>    </tr>
-  </table>
-  <table width="700" border="0" cellspacing="0" cellpadding="0">
-    <tr>
-      <td width="200" align="right" class="footer"><div align="left"><img src="../images/sos_link.png" alt="home" width="200" height="25" usemap="#home" border="0" />
-          <map name="home" id="home">
-            <area shape="rect" coords="4,3,197,22" href="index.html" alt="home" />
-          </map>
-      </div></td>
-      <td class="footer"><div align="right"><img src="../images/copyright.png" width="400" height="25" alt="copyright" /></div></td>
-      </tr>
-  </table>
-</div>
-</div>
-</div>
-</div>
-</body>
+	<table width="700" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="100" bordercolor="#000000"><img src="../images/header.png" alt="sos" width="700" height="100" usemap="#Map" border="0" />
+				<map name="Map" id="Map">
+					<area shape="rect" coords="6,5,697,94" href="index.html" alt="sos" />
+				</map>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="700" height="20"><img src="../images/buttons_en.png" alt="buttons" width="700" height="20" usemap="#buttons" border="0" />
+				<map name="buttons" id="buttons">
+					<area shape="rect" coords="17,1,146,19" href="cafe.html" alt="cafe" />
+					<area shape="rect" coords="153,1,247,19" href="class.html" alt="class" />
+					<area shape="rect" coords="253,1,347,19" href="studio.html" alt="studio" />
+					<area shape="rect" coords="354,0,447,19" href="photos.html" alt="photos" />
+					<area shape="rect" coords="452,1,547,19" href="map.html" alt="map" />
+					<area shape="rect" coords="553,1,681,19" href="contact.html" alt="contact" />
+				</map>
+			</td>
+		</tr>
+	</table>
+	<table width="700" border="0" cellpadding="10" cellspacing="0" id="body">
+		<tr>
+			<td width="100" valign="top">
+				<p><img src="../images/flags.jpg" width="100" height="387" /></p>
+				<p><img src="../images/language.png" alt="language" width="100" height="50" usemap="#language" border="0" />
+					<map name="language" id="language">
+						<area shape="rect" coords="3,1,98,24" href="contact.html" alt="English" />
+						<area shape="rect" coords="3,25,98,49" href="../jp/contact.html" alt="japanese" />
+					</map>
+				</p>
+			</td>
+			<td height="500" valign="top" align="left" class="text">
+				<p>
+					<span class="bold_text">E-Mail:</span> <a href="mailto:eikaiwa_cafe@hotmail.com">eikaiwa_cafe@hotmail.com</a><br>
+					<span class="bold_text">Phone:</span> 090 8484 2709<br>
+					<span class="bold_text">Address:</span> 349-9 Tamatsucho Kamiike, Nishi-ku, Kobe-shi, 651-2126<p>
+				<form id="form1" name="form1" method="post" action="form.php">
+					<label>Name:
+						<br>
+						<input type="text" name="name" id="name" size="50" />
+					</label>
+					<p>
+						<label>E-Mail Address:
+							<br>
+							<input type="text" name="email" id="email" size="50" />
+						</label>
+					</p>
+					<p>
+						<label>Message:
+							<br>
+							<textarea name="message" id="message" cols="60" rows="9"></textarea>
+						</label>
+					</p>
+					<div class="g-recaptcha" data-sitekey="6LfGbbgUAAAAANeZKDHWu5yh5vihsu1Q7V2vyJZp"></div>
+					<br/>
+					<input type="submit" value="Submit">
+					<fieldset>
+						<input placeholder="Name" type="text" tabindex="1" required autofocus>
+					</fieldset>
+					<fieldset>
+						<input placeholder="Email Address" type="email" tabindex="2" required>
+					</fieldset>
+					<fieldset>
+						<textarea placeholder="Type your Message Here...." tabindex="3" required></textarea>
+					</fieldset>
+					<fieldset>
+						<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+					</fieldset>
+				</form>
+		</br>  
+		</tr>
+	</table>
+	<table width="700" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td width="200" align="right" class="footer"><div align="left"><img src="../images/sos_link.png" alt="home" width="200" height="25" usemap="#home" border="0" />
+				<map name="home" id="home">
+					<area shape="rect" coords="4,3,197,22" href="index.html" alt="home" />
+				</map>
+				</div>
+			</td>
+			<td class="footer">
+				<div align="right">
+					<img src="../images/copyright.png" width="400" height="25" alt="copyright" />
+				</div>
+			</td>
+		</tr>
+	</table>
+	</div>
+	</div>
+	</div>
+	</div>
+	</body>
 </html>
